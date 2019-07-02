@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Max Pay">
+    <test name="API">
+        <parameter name="id" value="1" />
+        <parameter name="name" value="Luke Skywalker" />
+        <parameter name="planet_name" value="Tatooine" />
+        <parameter name="population" value="200000" />
+        <parameter name="film" value="Attack of the Clones" />
+        <classes>
+            <class name="tests.API.SwapiTest"/>
+        </classes>
+    </test>
+    <test name="UI">
+        <classes>
+            <class name="tests.UI.SignInTest"/>
+        </classes>
+    </test>
+</suite>

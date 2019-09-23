@@ -1,6 +1,7 @@
 package commonLibs.maxpay;
 
 import commonLibs.ui.user.User;
+import commonLibs.ui.user.UserAccount;
 import io.qameta.allure.Step;
 import io.restassured.http.ContentType;
 
@@ -9,7 +10,7 @@ import static io.restassured.RestAssured.given;
 public final class MaxPayApi {
 
     @Step("Create New user throws API")
-    public static boolean createUser(User user){
+    public static boolean createUser(UserAccount user){
         return given()
                 .baseUri("https://my-sandbox.maxpay.com").basePath("/api.php")
                 .header("x-requested-with", "XMLHttpRequest")
